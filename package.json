@@ -26,7 +26,13 @@
 				"default": "./cjs/index.js"
 			},
 			"./cjs/index.js"
-		]
+		],
+		"./esm/*.mjs": {
+			"types": "./dts/*.d.ts",
+			"import": "./esm/*.mjs",
+			"require": "./cjs/*.js",
+			"default": "./cjs/*.js"
+		}
 	},
 	"types": "dts/index.d.ts",
 	"module": "esm/index.mjs",
